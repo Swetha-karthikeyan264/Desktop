@@ -1,0 +1,129 @@
+:root{
+    --green:#5CB338;
+    --yellow:#ECE852;
+    --red:#FB4141;
+    --orange:#FFC145;
+}
+body,h2{
+    margin:0%;
+}
+.title{
+    background-image: url("../img/pexels-mareefe-678414.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+}
+header a{
+    text-decoration: none;
+    color:var(--yellow) ;
+    min-width: 120px;
+}
+header{
+    display: flex;
+    padding: 1em;
+    flex-wrap: wrap;
+    row-gap: 1em;
+}
+#logo{
+    flex: 3;
+    min-width: 260px;
+}
+nav{
+    flex:2;
+    display: flex;
+    align-items: center;
+}
+nav a{
+    flex: 1;
+}
+nav a:hover{
+    color: var(--green);
+}
+.main_text{
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    justify-content: center;
+    padding: 2em;
+}
+.line1{
+    color: var(--red);
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+.line2{
+    color:var(--orange);
+}
+.main_text div{
+    margin-top: .75em;
+}
+.main_text button{
+    width:10vw;
+    margin-top: 2em;
+    border-radius:10px;
+    padding:.7em;
+    background-color: var(--green);
+    color: white;
+    border: 1px solid var(--green);
+}
+.menu{
+    display: grid;
+    background: linear-gradient(to right , rgb(100,100,100), rgb(53,52,52));
+    color: white;
+    grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+}
+#menuheading,#locationhead{
+    background: linear-gradient(to right , rgb(100,100,100), rgb(53,52,52));
+    color:var(--red);
+    font-size: 2.5em;
+    justify-content: center;
+    text-align: center;
+}
+.menu th{
+    color: var(--green);
+    font-size: 1.8em;
+}
+table{
+    width:100%;
+    padding: 1em;
+   
+}
+.menu tr{
+    display: flex;
+    justify-content: center;
+    margin-top:.8em;
+    
+}
+.menu td:nth-child(1){
+    flex: 1;
+    justify-self: left;
+}
+.menu td:nth-child(2){
+   
+    justify-self:right;
+}
+.location{
+    background: linear-gradient(to right , rgb(100,100,100), rgb(53,52,52));
+    color: white;
+    text-align: center;
+}
+.location h2{
+    color:var(--green)
+}
+footer{
+    background-color: darkgray;
+    color: white;
+    padding: .23em 1em;
+    text-align: center;
+}
+header h2 i,nav i a{
+    margin-right: .5em;
+}
+.i:hover{
+    color: blue;
+    transition: 5s;
+}
+.icon{
+    padding-top: 1em;
+}
